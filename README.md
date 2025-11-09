@@ -55,6 +55,7 @@ We ask three simple questions:
 - Works with SHAP and LIME methods.  
 - Compares 4 model types(DT, RF, LR, XGBoost).  
 
-## Genral view for our framework
-https://github.com/sm3a96/What-Makes-an-Explanation-Useful-Operational-Metrics-for-Explainable-AI-in-Network-Security/blob/main/Models/Framework_Final.jpg
+## General View of Our Framework
+![Framework Overview](https://github.com/sm3a96/What-Makes-an-Explanation-Useful-Operational-Metrics-for-Explainable-AI-in-Network-Security/blob/main/Models/Framework_Final.jpg?raw=true)
+
 
