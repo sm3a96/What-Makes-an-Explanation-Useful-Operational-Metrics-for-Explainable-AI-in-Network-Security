@@ -1,0 +1,59 @@
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: DT Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.628 ± 0.480 [95% CI: 0.585, 0.669]
+  k=10: 0.646 ± 0.474 [95% CI: 0.604, 0.685]
+  k=15: 0.650 ± 0.472 [95% CI: 0.609, 0.690]
+  k=20: 0.652 ± 0.471 [95% CI: 0.610, 0.693]
+
+SHAP:
+  k=5: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=10: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=15: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=20: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.618 ± 0.306
+  95% CI: [0.593, 0.645]
+  vs Random: 0.160 (p=0.0005)
+  vs Least: 0.016 (p=0.0005)
+  Deletion 1-AUC: 0.566
+  Spearman ρ: 0.376
+
+SHAP:
+  Mean Faithfulness: 0.728 ± 0.347
+  95% CI: [0.699, 0.757]
+  vs Random: 0.160 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.601
+  Spearman ρ: 0.899
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. SHAP shows higher faithfulness (0.728 vs 0.618),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+

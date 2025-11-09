@@ -1,0 +1,265 @@
+
+================================================================================
+EVALUATING EXPLANATORY POWER For Decision Tree Model
+================================================================================
+
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: DT Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.628 ± 0.480 [95% CI: 0.585, 0.669]
+  k=10: 0.646 ± 0.474 [95% CI: 0.604, 0.685]
+  k=15: 0.650 ± 0.472 [95% CI: 0.609, 0.690]
+  k=20: 0.652 ± 0.471 [95% CI: 0.610, 0.693]
+
+SHAP:
+  k=5: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=10: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=15: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+  k=20: 0.667 ± 0.471 [95% CI: 0.625, 0.708]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.618 ± 0.306
+  95% CI: [0.593, 0.645]
+  vs Random: 0.160 (p=0.0005)
+  vs Least: 0.016 (p=0.0005)
+  Deletion 1-AUC: 0.566
+  Spearman ρ: 0.376
+
+SHAP:
+  Mean Faithfulness: 0.728 ± 0.347
+  95% CI: [0.699, 0.757]
+  vs Random: 0.160 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.601
+  Spearman ρ: 0.899
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. SHAP shows higher faithfulness (0.728 vs 0.618),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For Random Forest Model
+================================================================================
+
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: RF Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.431 ± 0.414 [95% CI: 0.394, 0.466]
+  k=10: 0.568 ± 0.455 [95% CI: 0.529, 0.606]
+  k=15: 0.634 ± 0.444 [95% CI: 0.593, 0.672]
+  k=20: 0.649 ± 0.443 [95% CI: 0.609, 0.688]
+
+SHAP:
+  k=5: 0.549 ± 0.408 [95% CI: 0.512, 0.583]
+  k=10: 0.681 ± 0.454 [95% CI: 0.639, 0.719]
+  k=15: 0.680 ± 0.450 [95% CI: 0.639, 0.717]
+  k=20: 0.685 ± 0.449 [95% CI: 0.645, 0.723]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.483 ± 0.442
+  95% CI: [0.446, 0.521]
+  vs Random: 0.025 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.348
+  Spearman ρ: 0.380
+
+SHAP:
+  Mean Faithfulness: 0.463 ± 0.405
+  95% CI: [0.428, 0.497]
+  vs Random: 0.025 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.386
+  Spearman ρ: 0.527
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. LIME shows higher faithfulness (0.463 vs 0.483),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+
+
+
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For Logistic Regression 
+================================================================================
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: LR Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.565 ± 0.429 [95% CI: 0.527, 0.602]
+  k=10: 0.618 ± 0.445 [95% CI: 0.577, 0.656]
+  k=15: 0.599 ± 0.435 [95% CI: 0.561, 0.635]
+  k=20: 0.623 ± 0.426 [95% CI: 0.586, 0.660]
+
+SHAP:
+  k=5: 0.700 ± 0.455 [95% CI: 0.657, 0.739]
+  k=10: 0.696 ± 0.452 [95% CI: 0.654, 0.734]
+  k=15: 0.690 ± 0.457 [95% CI: 0.649, 0.730]
+  k=20: 0.689 ± 0.460 [95% CI: 0.648, 0.729]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.329 ± 0.267
+  95% CI: [0.305, 0.352]
+  vs Random: 0.082 (p=0.0005)
+  vs Least: 0.002 (p=0.0005)
+  Deletion 1-AUC: 0.348
+  Spearman ρ: 0.352
+
+SHAP:
+  Mean Faithfulness: 0.598 ± 0.207
+  95% CI: [0.580, 0.615]
+  vs Random: 0.082 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.461
+  Spearman ρ: 0.444
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. SHAP shows higher faithfulness (0.598 vs 0.329),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For XGBoost Model 
+================================================================================
+
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: XGBoost Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.875 ± 0.218 [95% CI: 0.855, 0.893]
+  k=10: 0.862 ± 0.240 [95% CI: 0.840, 0.883]
+  k=15: 0.855 ± 0.253 [95% CI: 0.833, 0.877]
+  k=20: 0.859 ± 0.241 [95% CI: 0.838, 0.879]
+
+SHAP:
+  k=5: 0.352 ± 0.478 [95% CI: 0.309, 0.391]
+  k=10: 0.352 ± 0.478 [95% CI: 0.309, 0.391]
+  k=15: 0.352 ± 0.478 [95% CI: 0.309, 0.391]
+  k=20: 0.352 ± 0.478 [95% CI: 0.309, 0.391]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.455 ± 0.272
+  95% CI: [0.432, 0.478]
+  vs Random: 0.080 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.651
+  Spearman ρ: 0.397
+
+SHAP:
+  Mean Faithfulness: 0.241 ± 0.328
+  95% CI: [0.213, 0.270]
+  vs Random: 0.080 (p=0.0005)
+  vs Least: 0.115 (p=0.0005)
+  Deletion 1-AUC: 0.654
+  Spearman ρ: 0.601
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. LIME shows higher faithfulness (0.241 vs 0.455),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+

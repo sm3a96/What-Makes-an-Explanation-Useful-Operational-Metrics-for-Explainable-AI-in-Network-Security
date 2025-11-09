@@ -1,0 +1,53 @@
+================================================================================
+CICIDS2017 EXPLANATION ACCURACY EVALUATION  For Decision Tree Model
+================================================================================
+SHAP Faithfulness : 0.738
+LIME Faithfulness : 0.671
+
+================================================================================
+CICIDS2017 EXPLANATION ACCURACY EVALUATION   For Random Forest Model
+================================================================================
+SHAP Faithfulness : 0.566
+LIME Faithfulness : 0.502
+
+================================================================================
+CICIDS2017 EXPLANATION ACCURACY EVALUATION  For Logistic Regression 
+================================================================================
+SHAP Faithfulness : 0.861
+LIME Faithfulness : 0.731
+
+
+================================================================================
+CICIDS2017 EXPLANATION ACCURACY EVALUATION  For XGBoost Model 
+================================================================================
+SHAP Faithfulness : 0.835
+LIME Faithfulness : 0.465
+
+
+
+=========================================== EXPLANATION ACCURACY EVALUATION for Simargel Dataset ===============================================
+================================================================================
+Simargel EXPLANATION ACCURACY EVALUATION  For Decision Tree Model
+================================================================================
+SHAP Faithfulness : 0.6673151750972762
+LIME Faithfulness : 0.6478599221789884
+
+================================================================================
+Simargel EXPLANATION ACCURACY EVALUATION   For Random Forest Model
+================================================================================
+SHAP Faithfulness : 0.6634241245136187
+LIME Faithfulness : 0.6595330739299611
+
+================================================================================
+Simargel EXPLANATION ACCURACY EVALUATION  For Logistic Regression 
+================================================================================
+SHAP Faithfulness : 0.6673151750972762
+LIME Faithfulness : 0.6128404669260701
+
+
+================================================================================
+Simargel EXPLANATION ACCURACY EVALUATION  For XGBoost Model 
+================================================================================
+SHAP Faithfulness : 0.688715953307393
+LIME Faithfulness : 0.6673151750972762
+

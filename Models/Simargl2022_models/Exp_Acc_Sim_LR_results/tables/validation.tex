@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\caption{Statistical Validation of Explanation Accuracy}
+\label{tab:faithfulness_validation}
+\begin{tabular}{lccccc}
+\toprule
+Method & Faithfulness & vs Random & vs Least & Del. AUC & Spearman ρ \\
+\midrule
+LIME & 0.329 ± 0.267 & 0.082 (p=0.0005) & 0.002 (p=0.0005) & 0.348 & 0.352 \\
+SHAP & 0.598 ± 0.207 & 0.082 (p=0.0005) & 0.000 (p=0.0005) & 0.461 & 0.444 \\
+\bottomrule
+\end{tabular}
+\end{table}

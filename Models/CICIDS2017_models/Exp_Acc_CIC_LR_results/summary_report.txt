@@ -1,0 +1,59 @@
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: LR CICIDS2017 Dataset
+Samples: 1000
+Features: 76
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.679 ± 0.329 [95% CI: 0.659, 0.699]
+  k=10: 0.865 ± 0.240 [95% CI: 0.850, 0.880]
+  k=15: 0.892 ± 0.210 [95% CI: 0.880, 0.905]
+  k=20: 0.910 ± 0.197 [95% CI: 0.898, 0.923]
+
+SHAP:
+  k=5: 0.818 ± 0.260 [95% CI: 0.801, 0.834]
+  k=10: 0.975 ± 0.091 [95% CI: 0.969, 0.980]
+  k=15: 0.965 ± 0.105 [95% CI: 0.958, 0.971]
+  k=20: 0.963 ± 0.106 [95% CI: 0.956, 0.969]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.813 ± 0.249
+  95% CI: [0.798, 0.828]
+  vs Random: 0.345 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.701
+  Spearman ρ: 0.156
+
+SHAP:
+  Mean Faithfulness: 0.849 ± 0.189
+  95% CI: [0.838, 0.861]
+  vs Random: 0.345 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.634
+  Spearman ρ: 0.258
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. SHAP shows higher faithfulness (0.849 vs 0.813),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+

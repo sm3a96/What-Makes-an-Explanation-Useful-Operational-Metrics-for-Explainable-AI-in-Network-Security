@@ -1,0 +1,274 @@
+================================================================================
+EVALUATING EXPLANATORY POWER For Random Forest Model
+================================================================================
+--- SHAP Explanatory Power ---
+
+SHAP Results (Predicted Classes):
+  Mean Raw Power: 0.6766
+  Std Raw Power: 0.0270
+  Min Raw Power: 0.5309
+  Max Raw Power: 0.8067
+
+  Mean Normalized Power: 1.0000
+  Std Normalized Power: 0.0000
+  R² Score: 1.0000
+  ✓ Excellent: SHAP explanations highly correlate with model outputs
+  ✓ Excellent: Explanations fully account for model outputs
+
+================================================================================
+--- LIME Explanatory Power ---
+=== LIME EXPLAINER DIAGNOSTICS ===
+Explainer type: <class 'lime.lime_tabular.LimeTabularExplainer'>
+Explainer mode: classification
+Single prediction probabilities shape: (1, 3)
+Single prediction probabilities: [0. 1. 0.]
+LIME weights for single instance: 0.8042
+Model output for single instance: 1.0000
+
+LIME Results:
+  Mean Raw Power: 0.5087
+  Std Raw Power: 0.1875
+  Min Raw Power: 0.2900
+  Max Raw Power: 0.8757
+
+  Mean Normalized Power: 0.5671
+  Std Normalized Power: 0.2664
+  R² Score: -3.2166
+  ✗ Warning: LIME explanations may not fully capture model behavior
+  ✗ Warning: Explanations may over/under-explain model outputs
+
+================================================================================
+--- SHAP vs LIME Comparison ---
+================================================================================
+               Metric     SHAP      LIME
+       Mean Raw Power 0.676630  0.508709
+Mean Normalized Power 1.000000  0.567072
+             R² Score 1.000000 -3.216626
+        Std Raw Power 0.026994  0.187456
+
+--- Overall Assessment ---
+✓ SHAP has better explanatory power for this model
+
+================================================================================
+--- Distribution Analysis ---
+================================================================================
+
+SHAP Power Distribution Percentiles:
+  25th percentile: 0.6664
+  50th percentile (median): 0.6683
+  75th percentile: 0.6736
+  90th percentile: 0.7013
+  95th percentile: 0.7178
+
+LIME Power Distribution Percentiles:
+  25th percentile: 0.3271
+  50th percentile (median): 0.4652
+  75th percentile: 0.5985
+  90th percentile: 0.8511
+  95th percentile: 0.8621
+
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For Decision Tree Model
+================================================================================
+
+--- SHAP Explanatory Power ---
+
+SHAP Results (Predicted Classes):
+  Mean Raw Power: 0.6775
+  Std Raw Power: 0.0438
+  Min Raw Power: 0.6664
+  Max Raw Power: 1.0185
+
+  Mean Normalized Power: 1.0000
+  Std Normalized Power: 0.0000
+  R² Score: 1.0000
+  ✓ Excellent: SHAP explanations highly correlate with model outputs
+  ✓ Excellent: Explanations fully account for model outputs
+
+================================================================================
+--- LIME Explanatory Power ---
+=== LIME EXPLAINER DIAGNOSTICS ===
+Explainer type: <class 'lime.lime_tabular.LimeTabularExplainer'>
+Explainer mode: classification
+Single prediction probabilities shape: (1, 3)
+Single prediction probabilities: [0. 1. 0.]
+LIME weights for single instance: 0.9946
+Model output for single instance: 1.0000
+
+LIME Results:
+  Mean Raw Power: 0.8829
+  Std Raw Power: 0.2022
+  Min Raw Power: 0.3519
+  Max Raw Power: 1.3876
+
+  Mean Normalized Power: 0.6936
+  Std Normalized Power: 0.2851
+  R² Score: -1.8993
+  ✗ Warning: LIME explanations may not fully capture model behavior
+  ~ Good: Explanations mostly account for model outputs
+
+================================================================================
+--- SHAP vs LIME Comparison ---
+================================================================================
+               Metric     SHAP      LIME
+       Mean Raw Power 0.677549  0.882894
+Mean Normalized Power 1.000000  0.693630
+             R² Score 1.000000 -1.899274
+        Std Raw Power 0.043816  0.202245
+
+--- Overall Assessment ---
+✓ SHAP has better explanatory power for this model
+
+================================================================================
+--- Distribution Analysis ---
+================================================================================
+
+SHAP Power Distribution Percentiles:
+  25th percentile: 0.6664
+  50th percentile (median): 0.6664
+  75th percentile: 0.6867
+  90th percentile: 0.6867
+  95th percentile: 0.6867
+
+LIME Power Distribution Percentiles:
+  25th percentile: 0.7578
+  50th percentile (median): 0.9434
+  75th percentile: 1.0506
+  90th percentile: 1.0823
+  95th percentile: 1.0931
+
+
+
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For Logistic Regression 
+================================================================================
+
+
+--- SHAP Explanatory Power ---
+Mean Raw Power: 10.6822
+Std Raw Power: 2.7186
+Min Raw Power: 7.9906
+Max Raw Power: 21.6187
+Mean Normalized Power: 1.0000
+Std Normalized Power: 0.0000
+R² Score: 1.0000
+  ✓ Excellent: SHAP explanations highly correlate with model outputs
+
+================================================================================
+--- LIME Explanatory Power ---
+Mean Raw Power: 1.3900
+Std Raw Power: 0.2639
+Min Raw Power: 0.7248
+Max Raw Power: 1.7007
+Mean Normalized Power: 0.7469
+Std Normalized Power: 0.5776
+R² Score: -0.0110
+  ✗ Warning: LIME explanations may not fully capture model behavior
+
+================================================================================
+--- SHAP vs LIME Comparison ---
+               Metric      SHAP      LIME
+       Mean Raw Power 10.682221  1.389984
+Mean Normalized Power  1.000000  0.746944
+             R² Score  1.000000 -0.011015
+        Std Raw Power  2.718583  0.263930
+✓ SHAP has better explanatory power for this model
+
+================================================================================
+--- Distribution Analysis ---
+
+SHAP Power Distribution Percentiles:
+  25th percentile: 8.6899
+  50th percentile: 9.6328
+  75th percentile: 12.0144
+  90th percentile: 14.2276
+  95th percentile: 17.2238
+
+LIME Power Distribution Percentiles:
+  25th percentile: 1.2982
+  50th percentile: 1.4780
+  75th percentile: 1.5780
+  90th percentile: 1.6218
+  95th percentile: 1.6460
+
+
+
+
+================================================================================
+EVALUATING EXPLANATORY POWER For XGBoost Model 
+================================================================================
+
+--- SHAP Explanatory Power ---
+
+SHAP Results (Predicted Classes):
+  Mean Raw Power: 0.1406
+  Std Raw Power: 0.0075
+  Min Raw Power: 0.0716
+  Max Raw Power: 0.1885
+
+  Mean Normalized Power: 1.0000
+  Std Normalized Power: 0.0000
+  R² Score: 1.0000
+  ✓ Excellent: SHAP explanations highly correlate with model outputs
+  ✓ Excellent: Explanations fully account for model outputs
+
+================================================================================
+--- LIME Explanatory Power ---
+=== LIME EXPLAINER DIAGNOSTICS ===
+Explainer type: <class 'lime.lime_tabular.LimeTabularExplainer'>
+Explainer mode: classification
+Single prediction probabilities shape: (1, 3)
+Single prediction probabilities: [0.30883622 0.38206032 0.30910343]
+LIME weights for single instance: 0.0861
+Model output for single instance: 0.3821
+
+LIME Results:
+  Mean Raw Power: 0.0603
+  Std Raw Power: 0.0179
+  Min Raw Power: 0.0431
+  Max Raw Power: 0.0973
+
+  Mean Normalized Power: 0.7051
+  Std Normalized Power: 0.4756
+  R² Score: -0.5539
+  ✗ Warning: LIME explanations may not fully capture model behavior
+  ~ Good: Explanations mostly account for model outputs
+
+================================================================================
+--- SHAP vs LIME Comparison ---
+================================================================================
+               Metric     SHAP      LIME
+       Mean Raw Power 0.140574  0.060306
+Mean Normalized Power 1.000000  0.705069
+             R² Score 1.000000 -0.553945
+        Std Raw Power 0.007463  0.017922
+
+--- Overall Assessment ---
+✓ SHAP has better explanatory power for this model
+
+================================================================================
+--- Distribution Analysis ---
+================================================================================
+
+SHAP Power Distribution Percentiles:
+  25th percentile: 0.1392
+  50th percentile (median): 0.1394
+  75th percentile: 0.1419
+  90th percentile: 0.1447
+  95th percentile: 0.1447
+
+LIME Power Distribution Percentiles:
+  25th percentile: 0.0469
+  50th percentile (median): 0.0503
+  75th percentile: 0.0730
+  90th percentile: 0.0911
+  95th percentile: 0.0911
+

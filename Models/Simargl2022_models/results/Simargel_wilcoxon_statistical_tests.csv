@@ -1,0 +1,5 @@
+Model,W Statistic,p-value,Cohen's d,Median Diff,n
+Sim_Exp_Pow_DecisionTree_explanatory_power,9718,< 0.001,1.519,0.336,514
+Sim_Exp_Pow_RandomForest_explanatory_power,855,< 0.001,2.299,0.464,514
+Sim_Exp_Pow_LogisticRegression_explanatory_power,39699,< 0.001,0.620,0.091,514
+Sim_Exp_Pow_XGBoost_explanatory_power,13147,< 0.001,0.877,0.267,514

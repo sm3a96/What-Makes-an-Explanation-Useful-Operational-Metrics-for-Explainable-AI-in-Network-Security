@@ -1,0 +1,3 @@
+Method,Faithfulness,vs Random,vs Least,Del. AUC,Spearman ρ
+LIME,0.108 ± 0.217,0.003 (p=0.0005),0.000 (p=0.0005),0.246,0.423
+SHAP,0.283 ± 0.310,0.003 (p=0.0005),0.000 (p=0.0005),0.280,0.517

@@ -1,0 +1,5 @@
+Model,W Statistic,p-value,Cohen's d,Median Diff,n
+CIC_Exp_Pow_DecisionTree_explanatory_power,43381,< 0.001,0.155,0.786,5000
+CIC_Exp_Pow_RandomForest_explanatory_power,121525,< 0.001,0.995,0.765,5000
+CIC_Exp_Pow_LogisticRegression_explanatory_power,632279,< 0.001,0.281,0.911,5000
+CIC_Exp_Pow_XGBoost_explanatory_power,258686,< 0.001,1.706,0.785,5000

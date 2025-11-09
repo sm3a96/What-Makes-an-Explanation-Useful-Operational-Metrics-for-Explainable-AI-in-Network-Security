@@ -1,0 +1,59 @@
+======================================================================
+EXPLANATION ACCURACY EVALUATION - SUMMARY REPORT
+======================================================================
+
+Dataset: RF Simrgel Dataset
+Samples: 514
+Features: 27
+
+----------------------------------------------------------------------
+MAIN RESULTS (Full Dataset)
+----------------------------------------------------------------------
+
+LIME:
+  k=5: 0.431 ± 0.414 [95% CI: 0.394, 0.466]
+  k=10: 0.568 ± 0.455 [95% CI: 0.529, 0.606]
+  k=15: 0.634 ± 0.444 [95% CI: 0.593, 0.672]
+  k=20: 0.649 ± 0.443 [95% CI: 0.609, 0.688]
+
+SHAP:
+  k=5: 0.549 ± 0.408 [95% CI: 0.512, 0.583]
+  k=10: 0.681 ± 0.454 [95% CI: 0.639, 0.719]
+  k=15: 0.680 ± 0.450 [95% CI: 0.639, 0.717]
+  k=20: 0.685 ± 0.449 [95% CI: 0.645, 0.723]
+
+----------------------------------------------------------------------
+STATISTICAL VALIDATION
+----------------------------------------------------------------------
+
+LIME:
+  Mean Faithfulness: 0.483 ± 0.442
+  95% CI: [0.446, 0.521]
+  vs Random: 0.025 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.348
+  Spearman ρ: 0.380
+
+SHAP:
+  Mean Faithfulness: 0.463 ± 0.405
+  95% CI: [0.428, 0.497]
+  vs Random: 0.025 (p=0.0005)
+  vs Least: 0.000 (p=0.0005)
+  Deletion 1-AUC: 0.386
+  Spearman ρ: 0.527
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+
+1. Both methods significantly outperform random and least-important
+   baselines (p < 0.001), confirming causal faithfulness.
+
+2. LIME shows higher faithfulness (0.463 vs 0.483),
+   indicating better alignment with model behavior.
+
+3. Positive Spearman correlation and deletion AUC confirm that
+   identified important features causally impact predictions.
+
+4. Results are statistically robust with tight confidence intervals.
+

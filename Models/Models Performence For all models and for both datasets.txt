@@ -1,0 +1,65 @@
+Models Perfoemace 
+
+-------- CICIDS dataset ---------------- 
+
+DT model
+DT ({'All Features'}) Metrics:
+Accuracy: 0.9986226419884734
+Precision: 0.9986267408830196
+Recall: 0.9986226419884734
+F1 Score: 0.9986242144828097
+
+LR Model
+LR ({'All Features'}) Metrics:
+Accuracy: 0.7643321400462081
+Precision: 0.7599214717358638
+Recall: 0.7643321400462081
+F1 Score: 0.7423515937560234
+
+RF Model
+ RF ({'All Features'}) Metrics:
+Accuracy: 0.9988765328661742
+Precision: 0.9988756339912097
+Recall: 0.9988765328661742
+F1 Score: 0.9988759428801254
+
+
+
+ XGBoost ({'All Features'}) Metrics:
+Accuracy: 0.9933988371797802
+Precision: 0.9933956229936988
+Recall: 0.9933988371797802
+F1 Score: 0.993313400996832
+
+
+
+-------------------  Simargel dataset --------------------
+
+
+
+ DT ({'All Features'}) Metrics:
+Accuracy: 0.9980544747081712
+Precision: 0.9980657859017282
+Recall: 0.9980544747081712
+F1 Score: 0.9980544747081712
+
+
+ LR ({'All Features'}) Metrics:
+Accuracy: 0.9941634241245136
+Precision: 0.9941746691707399
+Recall: 0.9941634241245136
+F1 Score: 0.9941634241245136
+
+
+ RF ({'All Features'}) Metrics:
+Accuracy: 0.9980544747081712
+Precision: 0.9980657205191066
+Recall: 0.9980544747081712
+F1 Score: 0.9980544416336625
+
+
+ XGBoost ({'All Features'}) Metrics:
+Accuracy: 0.9980544747081712
+Precision: 0.9980657859017282
+Recall: 0.9980544747081712
+F1 Score: 0.9980544747081712
