@@ -52,7 +52,7 @@ def plot_confusion_matrix(y_true, y_pred, classes, title):
 
 def data_preprocessing():
     # Load data
-    df = pd.read_csv('/home/ibibers/IDS Project/IDS_Datasets/Combined_datasets/Simargelpreprocessed_dataset_with_original_labels.csv')
+    df = pd.read_csv('../IDS Project/IDS_Datasets/Combined_datasets/Simargelpreprocessed_dataset_with_original_labels.csv')
     
     # Remove duplicates
     df = df.drop_duplicates()
@@ -92,7 +92,7 @@ def data_preprocessing():
 
 # def data_preprocessing():
 #     # ---------------------------- Data Preprocessing ----------------------------
-#     df = pd.read_csv('/home/ibibers/IDS Project/IDS_Datasets/Combined_datasets/Simargelpreprocessed_dataset_with_original_labels.csv')
+#     df = pd.read_csv('../IDS Project/IDS_Datasets/Combined_datasets/Simargelpreprocessed_dataset_with_original_labels.csv')
 
 #     # Remove duplicates and unnecessary columns
 #     df = df.drop_duplicates()
