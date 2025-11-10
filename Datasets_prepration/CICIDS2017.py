@@ -89,7 +89,7 @@ def data_preprocessing(min_samples=1000):
     Args:
         min_samples (int): Minimum samples required to keep a class.
     """
-    file_path = "/home/ibibers/XAI_Evalation_For_IDS_datasets/IDS_Datasets/Combined_datasets/CICIDS2017_combined_dataset.csv" 
+    file_path = "../XAI_Evalation_For_IDS_datasets/IDS_Datasets/Combined_datasets/CICIDS2017_combined_dataset.csv" 
     df = pd.read_csv(file_path)
 
     # Clean data
@@ -139,7 +139,7 @@ def data_preprocessing(min_samples=1000):
 #     - Splits the data into training and testing sets
 #     """
 
-#     file_path = "/home/ibibers/XAI_Evalation_For_IDS_datasets/IDS_Datasets/Combined_datasets/CICIDS2017_combined_dataset.csv" 
+#     file_path = "../XAI_Evalation_For_IDS_datasets/IDS_Datasets/Combined_datasets/CICIDS2017_combined_dataset.csv" 
 #     df = pd.read_csv(file_path)
 
 #     # ------------------ Step 1: Initial Exploration and Cleaning ------------------
@@ -201,12 +201,12 @@ def data_preprocessing(min_samples=1000):
     # # ---------------------------- The Generated Top Features using different XAI Methods ----------------------------
 
     # # Extract top features from each method we used before
-    # shap_importance = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/shap_feature_importance.csv")
-    # loco_importance = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/loco_feature_importance.csv")
-    # pfi_importance = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/pfi_feature_importance.csv")
-    # dalex_importance = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/dalex_feature_importance.csv")
-    # profweight_importance = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/profweight_importance.csv")
-    # feature_ensemble = pd.read_csv("/home/ibibers/XAI_features_selection/TopFeatureUsingXAI_Methodes/feature_ensemble_final_feature_importance_scores.csv")
+    # shap_importance = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/shap_feature_importance.csv")
+    # loco_importance = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/loco_feature_importance.csv")
+    # pfi_importance = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/pfi_feature_importance.csv")
+    # dalex_importance = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/dalex_feature_importance.csv")
+    # profweight_importance = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/profweight_importance.csv")
+    # feature_ensemble = pd.read_csv("../XAI_features_selection/TopFeatureUsingXAI_Methodes/feature_ensemble_final_feature_importance_scores.csv")
 
     # # Extract top 5 and top 10 features for each method
     # shap_top_5_features = shap_importance['Feature'].head(5).tolist()
