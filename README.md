@@ -1,4 +1,4 @@
-# What-Makes-an-Explanation-Useful-Operational-Metrics-for-Explainable-AI-in-Network-Security
+# What Makes an Explanation Useful in Network Security? Towards Operational Evaluation Metrics for Explainable AI in Network Intrusion Detection
  We are proposing a rigorous evaluation framework that decomposes XAI quality into three distinct quantifiable metrics (Explanation Power, Actionability, Explanation of Accuracy)  .
 
 Our work give a clear, practical tests so teams can pick explainers that are true, useful, and actionable in real IDS work.
